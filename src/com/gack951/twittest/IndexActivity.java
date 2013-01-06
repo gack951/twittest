@@ -94,7 +94,7 @@ public class IndexActivity extends Activity {
 		Intent intent = new Intent(IndexActivity.this, LoginTwitterActivity.class);
 		intent.putExtra("auth_url", requestToken.getAuthorizationURL());
 
-		IndexActivity.this.startActivityForResult(intent, 1);
+		IndexActivity.this.startActivityForResult(intent, 1);//←ここでエラー
 	}
 
 	private void tweet() {
